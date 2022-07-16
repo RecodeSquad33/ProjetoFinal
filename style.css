@@ -1,3 +1,23 @@
+/* visited link  */
+.navbar a:visited {
+    color: rgb(247, 239, 239);
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: #ff9b19;
+}
+
+/* selected link blue */
+#active {
+    color: #f89007;
+}
+
+/* !IMPORTANT ONLY ADD THIS CLASS TO YOUR ACTIVE PAGE LINK ( Color Blue )
+.activePage a {
+	color: #0CF !important
+} */
+
 #body_home {
     background-image: url(Images/Background.png);
     height: 100%;
