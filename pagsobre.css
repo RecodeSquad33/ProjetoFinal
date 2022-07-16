@@ -1,0 +1,27 @@
+#body_home {
+    background-image: url("Images/Background.png"); 
+    height: 100%;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#texto-sobre {
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -1px -1px 0px rgb(0, 0, 0), 
+    -1px 1px 0px rgb(0, 0, 0),                    
+     1px -1px 0px rgb(0, 0, 0),                  
+     1px 0px 0px rgb(0, 0, 0);
+    margin: 7% 4% auto 4%;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+#paragrafo {
+    color: rgb(151, 229, 87);
+    text-shadow: 
+    -1px -1px 0px rgb(0, 0, 0), 
+    -1px 1px 0px rgb(0, 0, 0),                    
+     1px -1px 0px rgb(0, 0, 0),                  
+     1px 0px 0px rgb(0, 0, 0);
+}
