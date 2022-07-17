@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+.navbar {
+    padding: 0px;
+}
+
 /* visited link  */
 .navbar a:visited {
     color: rgb(247, 239, 239);
@@ -5,12 +11,12 @@
 
 /* mouse over link */
 .navbar a:hover {
-    color: #ff9b19;
+    color: #f89007;
 }
 
 /* selected link blue */
 #active {
-    color: #f89007;
+    color: #ff9b19;
 }
 
 /* !IMPORTANT ONLY ADD THIS CLASS TO YOUR ACTIVE PAGE LINK ( Color Blue )
@@ -37,4 +43,34 @@
     color: white;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+}
+
+.elementor-divider {
+    display: inline-flex;
+    padding: .3em 0;
+    border-bottom: 5px solid #ff9b19;
+    justify-content: flex-start;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+    size: 0px;
+    width: 200px;
+
+}
+
+.nav-item {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .elementor-divider {
+        width: 300px;
+        
+    }
+}
+    @media (max-width: 354px) {
+        .elementor-divider {
+            width: 900px;
+       
+        }
+    
 }
