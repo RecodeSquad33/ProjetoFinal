@@ -38,9 +38,9 @@ h6 {
     width: 100%;
     height: 100vh;
     background-color: #0D6EFD;
-    background-image: url(".//Images/Background\ formulários.png");
-    background-repeat: repeat-x;
-    background-position: bottom;
+    background-image: url(".//Images/Background\ formulários.png"), url(".//Images/Background\ formulários.png");
+    background-repeat: repeat-x, repeat-x;
+    background-position: bottom, top;
     transition-duration: 0.3s;
 }
 
