@@ -18,18 +18,19 @@
             <h1>Faça parte da transformação.</h1>
         </div>
 
-        <div>
-            <button class="botao" id="btn_vol" onclick="formvol()">Cadastro de<br> voluntários</button>
+        <div class="botao">
+            <button id="btn_vol" onclick="formvol()">Cadastro de voluntários</button>
+       
+            <button id="btn_inst" onclick="forminst()">Cadastro de instituição</button>
+        </div><br>
 
-            <button class="botao" id="btn_inst" onclick="forminst()">Cadastro de<br> instituição</button>
-        </div>
+        <a href="index.html">Home</a>
 
-        <div><img src="Images/Imagem área de cadastro.png" alt=""></div>
     </div>
     <!-- FIM Lado direito -->
 
     <div class="lado-direito">
-        <form id="form_vol" class="voluntario">
+        <form id="form_vol" class="voluntario off">
             <div class="input span14">
                 <h1>Cadastro de voluntários</h1>
             </div>
@@ -108,7 +109,7 @@
             </div>
 
             <div class="input span14">
-                <button class="botao">Enviar</button>
+                <button>Enviar</button>
             </div>
         </form>
         <!-- FIM formulário de voluntário -->
