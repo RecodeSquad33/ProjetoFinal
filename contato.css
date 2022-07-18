@@ -13,6 +13,15 @@ body {
     box-sizing: border-box;
 }
 
+body {
+    display: flexbox;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header"
+        "aside aside ";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 100vh;
+}
 
 .esquerdo-contato {
     display: flex;
@@ -21,11 +30,12 @@ body {
     align-content: center;
     align-items: center;
     width: 40%;
-    height: 88vh;
+    height: 85vh;
     background: linear-gradient(60deg, rgba(166, 166, 247, 0.808), rgb(198, 198, 221), rgb(143, 143, 228));
     position: fixed;
     margin: 10px 0px 0px 10px;
     border-radius: 15px;
+    padding: 0%;
 
 }
 
@@ -44,7 +54,8 @@ body {
 .display-5 {
     width: 100%;
     font-family: 'Roboto Slab', serif;
-    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -62,14 +73,13 @@ body {
 
 .fale-conosco {
     display: flexbox;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     align-items: center;
-    width: 85%;
+    width: 80%;
     height: auto;
     margin: 0px;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .display-4 {
@@ -80,25 +90,22 @@ body {
 
 .icon {
     font-size: 1.8rem;
-    color:white;
+    color: white;
     align-items: center;
     position: relative;
     margin-left: 40px;
     padding-top: 0%;
 }
-.navbar a:hover {
-    color: #f89007;
-
-
-}
 
 .element-icon {
-    margin: 0 20px 10px 20px;
+    margin: 0px 20px 20px 20px;
     color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    margin-bottom: auto;
+
 }
 
 .element-icon a {
@@ -111,9 +118,10 @@ body {
     margin: 0 10px 10px 0;
     background-color: rgb(219, 204, 204);
     color: #ff9b19;
-    border: 1px solid rgb(129, 125, 125);
+    border: 1px solid rgb(122, 113, 113);
     transition: all 0.2s esse;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 .element-icon a i {
@@ -125,9 +133,8 @@ body {
     background-color: white;
 }
 
-
 label {
-   
+
     text-align: left;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -168,9 +175,9 @@ select:focus {
     box-shadow: 1px 1px 8px -3px rgb(0 0 0 / 9%);
 }
 
-.btn{
-    
-   align-items: center;
+.btn {
+
+    align-items: center;
     border: 0;
     color: #ffffff;
     background-color: #ff9b19;
@@ -178,8 +185,6 @@ select:focus {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 10px 10px 20px;
     margin: 10px;
-    
-
 }
 
 .span13 {
@@ -192,7 +197,6 @@ img {
     max-width: 100%;
     max-height: 100vh;
 }
-
 
 @media (max-width: 768px) {
     html {
@@ -221,20 +225,21 @@ img {
 
     .esquerdo-contato {
         width: 100%;
-        padding: 5px;
+        padding: 0px;
         flex-direction: row;
         height: auto;
         border-radius: 0;
         z-index: 1;
         justify-items: center;
         margin: 0px;
+        position: relative;
     }
 
     .direito-form {
         width: 100%;
         height: 50%;
         padding: 0;
-        position: absolute;
+        position: sticky;
         top: 90px;
     }
 
@@ -273,6 +278,6 @@ img {
 
 @media (max-width: 364px) {
     .direito-form {
-        top: 120px;
+        top: 160px;
     }
 }
