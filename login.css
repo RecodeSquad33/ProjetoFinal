@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@200;400&family=Roboto&family=Roboto+Slab:wght@100;500&display=swap');
+
 html,
 body {
   height: 100%;
+}
+
+main {
+  background-color: rgb(216, 207, 207);
+  border-radius: 20px;
+  padding-top: 50px;
 }
 
 body {
@@ -10,6 +17,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f3f3f3;
+  overflow-x: hidden;
 }
 
 .form-signin {
@@ -39,6 +47,10 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
