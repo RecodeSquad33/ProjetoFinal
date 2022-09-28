@@ -25,6 +25,9 @@ public class LogarServlet extends HttpServlet {
 
 		} else if (i.equals(request.getParameter("login")) && (si.equals(request.getParameter("senha")))){
 			response.sendRedirect("perfilInst.jsp");
+		
+		} else {
+			response.sendRedirect("login.html");
 		}
 
 	}
